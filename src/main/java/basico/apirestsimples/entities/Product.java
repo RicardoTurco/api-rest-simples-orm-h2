@@ -1,11 +1,20 @@
 package basico.apirestsimples.entities;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "tb_product")
 public class Product {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private Double price;
 
+    // Criando uma "foreing key" com a table Department
+    @ManyToOne
+    @JoinColumn(name = "department_id")
     private Department department;
 
     // Construtor SEM argumentos, para que possamos
