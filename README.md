@@ -1,15 +1,16 @@
-# api-rest-simples
+# api-rest-simples-orm-h2
+
+Exemplo de uma API Rest simples utilizando Java e Spring.
+
+## IMPORTANTE:
+
 ```
-Exemplo de uma API Rest simples utilizando Java e Spring. 
+Nesta API é implementada a utilização de um banco de dados H2, onde as informações (registros),
+serão inseridos préviamente para posterior visualização via requisição da API.
 
-É importante ressaltar que as informações / registros retornados nos endpoints do projeto
-estão sendo criados "hard coded", ou seja, estão "fixos" no código.
+Lembrando que o código dessa API é uma CONTINUAÇÃO de um outro projeto:
+(https://github.com/RicardoTurco/api-rest-simples)
 ```
-
-O projeto foi criado utilizando o spring initializr:
-https://start.spring.io/
-
-![](static/imgs/img00.png)
 
 ## Entidades:
 
